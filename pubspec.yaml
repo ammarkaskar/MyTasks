@@ -1,0 +1,40 @@
+name: mytasks
+description: A polished Flutter task manager with light/dark themes.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/icon.png
+    - assets/splash/splash.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: assets/icons/icon.png
+  adaptive_icon_background: "#3F51B5"
+  adaptive_icon_foreground: assets/icons/icon.png
+
+flutter_native_splash:
+  color: "#3F51B5"
+  color_dark: "#0F172A"
+  image: assets/splash/splash.png
+  android_12:
+    image: assets/splash/splash.png
+    icon_background_color: "#3F51B5"
