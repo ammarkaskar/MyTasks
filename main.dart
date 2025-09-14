@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 void main() {
   runApp(const MyTasksApp());
 }
-
 class MyTasksApp extends StatefulWidget {
   const MyTasksApp({super.key});
 
   @override
   State<MyTasksApp> createState() => _MyTasksAppState();
 }
-
 class _MyTasksAppState extends State<MyTasksApp> {
   ThemeMode _themeMode = ThemeMode.system;
 
@@ -20,7 +17,6 @@ class _MyTasksAppState extends State<MyTasksApp> {
       _themeMode = _themeMode == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
     });
   }
-
   @override
   Widget build(BuildContext context) {
     final baseLight = ThemeData.light(useMaterial3: true);
@@ -52,7 +48,6 @@ class _MyTasksAppState extends State<MyTasksApp> {
         elevation: 0,
       ),
     );
-
     return MaterialApp(
       title: 'MyTasks',
       theme: lightTheme,
@@ -114,7 +109,6 @@ class _TaskManagerHomeState extends State<TaskManagerHome> with TickerProviderSt
     _fabAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(parent: _fabController, curve: Curves.easeOutBack));
     _fabController.forward();
   }
-
   @override
   void dispose() {
     _fabController.dispose();
@@ -633,3 +627,4 @@ class _TaskManagerHomeState extends State<TaskManagerHome> with TickerProviderSt
     }
   }
 }
+// Ammar Kaskar
