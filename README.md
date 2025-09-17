@@ -1,4 +1,4 @@
-# MyTasks
+# My Tasks
 A modern Flutter task manager with:
 
 - 🎨 Gradient header & polished UI
